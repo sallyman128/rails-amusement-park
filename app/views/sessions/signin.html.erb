@@ -1,0 +1,8 @@
+<%= form_with(method: :post) do |form| %>
+  <%= form.label :user_name, "Name:" %>
+  <%= form.select :user_name, @user_names %><br />
+  <%= form.label :password, "Password:" %>
+  <%= form.password_field :password %><br />
+
+  <%= form.submit "Sign In" %>
+<% end %>
